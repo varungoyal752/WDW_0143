@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>HOTEL ROOM BOOKING FORM</title>
+    </head>
+    <body style="text-align: center;">
+        <div style="border: 3px solid black; padding: 10px; display: inline-block;">
+        <h1>HOTEL ROOM BOOKING FORM</h1>
+        <form>
+            <label for="name">Full Name:</label>
+            <input required id="name" type="text" placeholder="Enter you name:"><br><br>
+            <label for="email">Email:</label>
+            <input required id="email" type="email" placeholder="Enter you email:"><br><br>
+            <label for="phone">Phone:</label>
+            <input required id="phone" type="text" placeholder="Enter you phone number:"><br><br>
+            <label for="check_in_date">check_in_date:</label>
+            <input required id="check_in_date" type="date"><br><br>
+            <label for="check_out_date">check_out_date:</label>
+            <input required id="check_out_date" type="date"><br><br>
+            <label for="room type" >Rom type:</label>
+            <select id="room type" >
+                <option value="" disabled selected hidden>Choose room type:</option>
+                <option value="single room">Single Room</option>
+                <option value="single room">Double Room</option>
+                <option value="single room">Suite</option>
+            </select><br><br>
+            <label for="guests">Number of Guests:</label>
+            <input required type="number" min="1" max="10" id="guests"><br><br>
+            <label for="special requests">Special Requests:</label><br>
+            <textarea id="special requests"></textarea><br><br>
+            <button type="submit">Book Now</button>
+            <button type="submit">Reset Form</button>
+        </form>
+        </div>
+    </body>
+</html>
