@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+</head>
+<body>
+  <form action="submit.php" method="post">
+     <label for="fullname"></label>
+        <input type="text" placeholder="Fullname">
+        <br><br>
+       <label for="email"></label>
+        <input type="email" placeholder="you@college.edu">
+        <br><br>
+        <label for="tel"></label>
+        <input type="tel" placeholder="10-digit mobile"  pattern="[0-9]{10}" title="Enter exactly 10 digits" required>
+        <br><br>
+    <label for="password"> </label>
+        <input type="password" name="password" placeholder="Min 6 characters"
+       minlength="6" required>
+       <br><br>
+       <label for="number"></label>
+    <input type="number" name="age" placeholder="Age(17-30)"
+       min="17" max="30" required></p>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
