@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nested and Responsive Table</title>
+  <style>
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #777; padding: 10px; }
+  </style>
+</head>
+<body>
+    <table>
+      <tr><th>Day</th><th>Lab Batches</th><th>Faculty</th><th>Room</th><th>Time</th></tr>
+      <tr>
+        <td rowspan="2">Friday</td>
+        <td>
+          <table>
+            <tr><th>Batch</th><th>System</th></tr>
+            <tr><td>A1</td><td>PC 1-20</td></tr>
+            <tr><td>A2</td><td>PC 21-40</td></tr>
+          </table>
+        </td>
+        <td rowspan="2">Dr. Sharma</td><td rowspan="2">Lab 2</td>
+        <td rowspan="2">2-4 PM</td>
+      </tr>
+    </table>
+</body>
+</html>
